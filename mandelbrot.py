@@ -5,7 +5,7 @@ def mandel(N):
 	x = np.linspace(-2,2,N)
 	y = x.copy()
 	grid = np.zeros((N,N))
-	for i in range(N): #I am sorry. There should be a smart parallel way to do this, but I'm stupid
+	for i in range(N): #Not super efficient, we could use array parallelisation...
 		for j in range(N):	
 			c = x[i] + 1j*y[j]
 			grid[i,j] = checkmand(c)

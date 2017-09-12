@@ -6,7 +6,7 @@ def program(): #This is the main program for problem 3.8
 	plt.scatter(x,y,c='red')
 	m,c = calce(x,y)
 	fity = m*x+c
-	plt.plot(x,fity,'k-')
+        plt.plot(x,fity,'k-')
 
 	#Now let's calculate h.
 	h = m*1.6*10**(-19)
